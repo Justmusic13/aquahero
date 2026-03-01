@@ -1,32 +1,107 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '@/hooks/useAuth';
-import './Navbar.css';
+import { AVATAR_MAP } from '@/types';
 
 const Navbar: React.FC = () => {
   const { profile, logout } = useAuth();
   const navigate = useNavigate();
+  const location = useLocation();
 
   const handleLogout = () => {
     logout();
     navigate('/login');
   };
 
+  const avatar = AVATAR_MAP[profile?.avatarId || 1] || AVATAR_MAP[1];
+
+  const navItems = [
+    { path: '/', label: '🏠', title: 'Home' },
+    { path: '/shower', label: '🚿', title: 'Shower' },
+    { path: '/game', label: '🎮', title: 'Games' },
+    { path: '/leaderboard', label: '🏆', title: 'Ranks' },
+    { path: '/profile', label: avatar.emoji, title: 'Profile' },
+    { path: '/settings', label: '⚙️', title: 'Settings' },
+  ];
+
   return (
-    <nav className="navbar">
-      <div className="nav-container">
-        <Link to="/" className="nav-logo">AquaHero</Link>
-        <ul className="nav-menu">
-          <li className="nav-item"><Link to="/" className="nav-link">Dashboard</Link></li>
-          <li className="nav-item"><Link to="/shower" className="nav-link">Shower</Link></li>
-          <li className="nav-item"><Link to="/game" className="nav-link">Game</Link></li>
-          <li className="nav-item"><Link to="/leaderboard" className="nav-link">Leaderboard</Link></li>
-          <li className="nav-item"><Link to="/profile" className="nav-link">Profile</Link></li>
-          <li className="nav-item"><Link to="/settings" className="nav-link">Settings</Link></li>
-        </ul>
-        <div className="nav-user-info">
-          <span>{profile?.childName} - {profile?.points} pts</span>
-          <button onClick={handleLogout} className="nav-logout-btn">Logout</button>
+    <nav style={{
+      background: 'var(--surface-color)',
+      boxShadow: '0 2px 8px rgba(0,0,0,0.08)',
+      padding: '0 1rem',
+      position: 'sticky',
+      top: 0,
+      zIndex: 100,
+    }}>
+      <div style={{
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        maxWidth: '1000px',
+        margin: '0 auto',
+        height: '56px',
+      }}>
+        {/* Logo */}
+        <Link to="/" style={{
+          textDecoration: 'none',
+          fontWeight: 'bold',
+          fontSize: '1.3rem',
+          color: 'var(--primary-color)',
+        }}>
+          💧 AquaHero
+        </Link>
+
+        {/* Nav items */}
+        <div style={{ display: 'flex', gap: '0.25rem' }}>
+          {navItems.map(item => {
+            const isActive = location.pathname === item.path;
+            return (
+              <Link
+                key={item.path}
+                to={item.path}
+                title={item.title}
+                style={{
+                  textDecoration: 'none',
+                  padding: '0.4rem 0.6rem',
+                  borderRadius: '10px',
+                  fontSize: '1.2rem',
+                  background: isActive ? 'var(--background-color)' : 'transparent',
+                  border: isActive ? '2px solid var(--primary-color)' : '2px solid transparent',
+                  transition: 'all 0.2s',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.25rem',
+                }}
+              >
+                {item.label}
+              </Link>
+            );
+          })}
+        </div>
+
+        {/* Points + logout */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+          <span style={{
+            background: 'linear-gradient(135deg, #fbbf24, #f97316)',
+            color: 'white',
+            padding: '0.25rem 0.75rem',
+            borderRadius: '9999px',
+            fontSize: '0.85rem',
+            fontWeight: 'bold',
+          }}>
+            ⭐ {profile?.points || 0}
+          </span>
+          <button
+            onClick={handleLogout}
+            style={{
+              padding: '0.3rem 0.6rem',
+              fontSize: '0.8rem',
+              background: 'var(--danger-color)',
+              borderRadius: '8px',
+            }}
+          >
+            Logout
+          </button>
         </div>
       </div>
     </nav>

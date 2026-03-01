@@ -4,7 +4,6 @@ import { authenticate } from '../middleware/auth';
 
 const router = Router();
 
-// All points routes are protected
 router.use(authenticate);
 
 router.get('/', getPoints);

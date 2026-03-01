@@ -10,6 +10,7 @@ import ShowerPage from './pages/ShowerPage';
 import GamePage from './pages/GamePage';
 import LeaderboardPage from './pages/LeaderboardPage';
 import SettingsPage from './pages/SettingsPage';
+import PrizesPage from './pages/PrizesPage';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
                 <Route path="/game" element={<GamePage />} />
                 <Route path="/leaderboard" element={<LeaderboardPage />} />
                 <Route path="/settings" element={<SettingsPage />} />
+                <Route path="/prizes" element={<PrizesPage />} />
               </Routes>
             </Layout>
           </PrivateRoute>

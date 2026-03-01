@@ -6,7 +6,11 @@ export const getProfile = async (): Promise<Profile> => {
   return response.data;
 };
 
-export const updateProfile = async (data: { childName?: string; avatarId?: number }): Promise<Profile> => {
+export const updateProfile = async (data: {
+  childName?: string;
+  avatarId?: number;
+  themeColor?: string;
+}): Promise<Profile> => {
   const response = await api.put('/profile', data);
   return response.data;
 };
