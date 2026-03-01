@@ -1,0 +1,709 @@
+{
+  "generatedAt": "2026-03-01T17:32:53.758Z",
+  "projectDir": "/home/jmotz/ai-dev-shop-v2/transcripts/project-1772384990181",
+  "codeDir": "/home/jmotz/ai-dev-shop-v2/transcripts/project-1772384990181/code",
+  "totalFiles": 116,
+  "structure": {
+    "clientFiles": 54,
+    "serverFiles": 56,
+    "rootFiles": 6
+  },
+  "files": [
+    {
+      "path": "client/package.json",
+      "source": "node-4-1772384008894-frontend-lead-developer.md",
+      "classification": "client",
+      "size": 626
+    },
+    {
+      "path": "client/tsconfig.json",
+      "source": "node-4-1772384008894-frontend-lead-developer.md",
+      "classification": "client",
+      "size": 471
+    },
+    {
+      "path": "client/vite.config.ts",
+      "source": "node-4-1772384008894-frontend-lead-developer.md",
+      "classification": "client",
+      "size": 288
+    },
+    {
+      "path": "client/tailwind.config.js",
+      "source": "node-4-1772384008894-frontend-lead-developer.md",
+      "classification": "client",
+      "size": 1403
+    },
+    {
+      "path": "client/postcss.config.js",
+      "source": "node-4-1772384008894-frontend-lead-developer.md",
+      "classification": "client",
+      "size": 79
+    },
+    {
+      "path": "client/src/main.tsx",
+      "source": "node-4-1772384008894-frontend-lead-developer.md",
+      "classification": "client",
+      "size": 328
+    },
+    {
+      "path": "client/src/index.css",
+      "source": "node-4-1772384008894-frontend-lead-developer.md",
+      "classification": "client",
+      "size": 1274
+    },
+    {
+      "path": "client/src/App.tsx",
+      "source": "node-4-1772384008894-frontend-lead-developer.md",
+      "classification": "client",
+      "size": 935
+    },
+    {
+      "path": "client/src/types/index.ts",
+      "source": "node-4-1772384008894-frontend-lead-developer.md",
+      "classification": "client",
+      "size": 919
+    },
+    {
+      "path": "client/src/services/api.ts",
+      "source": "node-4-1772384008894-frontend-lead-developer.md",
+      "classification": "client",
+      "size": 408
+    },
+    {
+      "path": "client/src/services/gameService.ts",
+      "source": "node-4-1772384008894-frontend-lead-developer.md",
+      "classification": "client",
+      "size": 434
+    },
+    {
+      "path": "client/src/hooks/usePoints.ts",
+      "source": "node-4-1772384008894-frontend-lead-developer.md",
+      "classification": "client",
+      "size": 1265
+    },
+    {
+      "path": "client/src/hooks/useReminder.ts",
+      "source": "node-4-1772384008894-frontend-lead-developer.md",
+      "classification": "client",
+      "size": 1761
+    },
+    {
+      "path": "client/src/hooks/useShowerLog.ts",
+      "source": "node-4-1772384008894-frontend-lead-developer.md",
+      "classification": "client",
+      "size": 1625
+    },
+    {
+      "path": "client/src/utils/dateUtils.ts",
+      "source": "node-4-1772384008894-frontend-lead-developer.md",
+      "classification": "client",
+      "size": 1000
+    },
+    {
+      "path": "client/src/utils/gameLogic.ts",
+      "source": "node-4-1772384008894-frontend-lead-developer.md",
+      "classification": "client",
+      "size": 1993
+    },
+    {
+      "path": "client/src/components/Avatar.tsx",
+      "source": "node-4-1772384008894-frontend-lead-developer.md",
+      "classification": "client",
+      "size": 870
+    },
+    {
+      "path": "client/src/components/Button.tsx",
+      "source": "node-4-1772384008894-frontend-lead-developer.md",
+      "classification": "client",
+      "size": 1278
+    },
+    {
+      "path": "client/src/components/GameCard.tsx",
+      "source": "node-4-1772384008894-frontend-lead-developer.md",
+      "classification": "client",
+      "size": 1331
+    },
+    {
+      "path": "client/src/components/PointsDisplay.tsx",
+      "source": "node-4-1772384008894-frontend-lead-developer.md",
+      "classification": "client",
+      "size": 1289
+    },
+    {
+      "path": "client/src/components/ReminderNotification.tsx",
+      "source": "node-4-1772384008894-frontend-lead-developer.md",
+      "classification": "client",
+      "size": 1371
+    },
+    {
+      "path": "client/src/components/VideoPlayer.tsx",
+      "source": "node-4-1772384008894-frontend-lead-developer.md",
+      "classification": "client",
+      "size": 1025
+    },
+    {
+      "path": "client/package.json",
+      "source": "node-5-1772384008894-backend-lead-developer.md",
+      "classification": "client",
+      "size": 724
+    },
+    {
+      "path": "client/tsconfig.json",
+      "source": "node-5-1772384008894-backend-lead-developer.md",
+      "classification": "client",
+      "size": 470
+    },
+    {
+      "path": "server/.env.example",
+      "source": "node-5-1772384008894-backend-lead-developer.md",
+      "classification": "server",
+      "size": 298
+    },
+    {
+      "path": "server/migrations/001_initial_schema.sql",
+      "source": "node-5-1772384008894-backend-lead-developer.md",
+      "classification": "server",
+      "size": 2671
+    },
+    {
+      "path": "server/src/server.ts",
+      "source": "node-5-1772384008894-backend-lead-developer.md",
+      "classification": "server",
+      "size": 860
+    },
+    {
+      "path": "server/src/config/database.ts",
+      "source": "node-5-1772384008894-backend-lead-developer.md",
+      "classification": "server",
+      "size": 632
+    },
+    {
+      "path": "server/src/config/jwt.ts",
+      "source": "node-5-1772384008894-backend-lead-developer.md",
+      "classification": "server",
+      "size": 181
+    },
+    {
+      "path": "server/src/middleware/auth.ts",
+      "source": "node-5-1772384008894-backend-lead-developer.md",
+      "classification": "server",
+      "size": 1155
+    },
+    {
+      "path": "server/src/middleware/errorHandler.ts",
+      "source": "node-5-1772384008894-backend-lead-developer.md",
+      "classification": "server",
+      "size": 623
+    },
+    {
+      "path": "client/src/types/index.ts",
+      "source": "node-5-1772384008894-backend-lead-developer.md",
+      "classification": "client",
+      "size": 421
+    },
+    {
+      "path": "server/src/routes/index.ts",
+      "source": "node-5-1772384008894-backend-lead-developer.md",
+      "classification": "server",
+      "size": 496
+    },
+    {
+      "path": "server/src/routes/profile.routes.ts",
+      "source": "node-5-1772384008894-backend-lead-developer.md",
+      "classification": "server",
+      "size": 355
+    },
+    {
+      "path": "server/src/routes/points.routes.ts",
+      "source": "node-5-1772384008894-backend-lead-developer.md",
+      "classification": "server",
+      "size": 326
+    },
+    {
+      "path": "server/src/routes/shower.routes.ts",
+      "source": "node-5-1772384008894-backend-lead-developer.md",
+      "classification": "server",
+      "size": 366
+    },
+    {
+      "path": "server/src/routes/reminder.routes.ts",
+      "source": "node-5-1772384008894-backend-lead-developer.md",
+      "classification": "server",
+      "size": 349
+    },
+    {
+      "path": "server/src/routes/game.routes.ts",
+      "source": "node-5-1772384008894-backend-lead-developer.md",
+      "classification": "server",
+      "size": 317
+    },
+    {
+      "path": "server/src/controllers/profile.controller.ts",
+      "source": "node-5-1772384008894-backend-lead-developer.md",
+      "classification": "server",
+      "size": 975
+    },
+    {
+      "path": "server/src/controllers/points.controller.ts",
+      "source": "node-5-1772384008894-backend-lead-developer.md",
+      "classification": "server",
+      "size": 1177
+    },
+    {
+      "path": "server/src/controllers/shower.controller.ts",
+      "source": "node-5-1772384008894-backend-lead-developer.md",
+      "classification": "server",
+      "size": 1436
+    },
+    {
+      "path": "server/src/controllers/reminder.controller.ts",
+      "source": "node-5-1772384008894-backend-lead-developer.md",
+      "classification": "server",
+      "size": 1346
+    },
+    {
+      "path": "server/src/controllers/game.controller.ts",
+      "source": "node-5-1772384008894-backend-lead-developer.md",
+      "classification": "server",
+      "size": 1126
+    },
+    {
+      "path": "server/src/services/auth.service.ts",
+      "source": "node-5-1772384008894-backend-lead-developer.md",
+      "classification": "server",
+      "size": 754
+    },
+    {
+      "path": "server/src/services/profile.service.ts",
+      "source": "node-5-1772384008894-backend-lead-developer.md",
+      "classification": "server",
+      "size": 1892
+    },
+    {
+      "path": "server/src/services/shower.service.ts",
+      "source": "node-5-1772384008894-backend-lead-developer.md",
+      "classification": "server",
+      "size": 1768
+    },
+    {
+      "path": "server/src/services/reminder.service.ts",
+      "source": "node-5-1772384008894-backend-lead-developer.md",
+      "classification": "server",
+      "size": 2318
+    },
+    {
+      "path": "server/src/services/game.service.ts",
+      "source": "node-5-1772384008894-backend-lead-developer.md",
+      "classification": "server",
+      "size": 926
+    },
+    {
+      "path": ".env",
+      "source": "node-7-1772384008894-frontend-remediation-developer.md",
+      "classification": "root",
+      "size": 38
+    },
+    {
+      "path": "client/package.json",
+      "source": "node-7-1772384008894-frontend-remediation-developer.md",
+      "classification": "client",
+      "size": 525
+    },
+    {
+      "path": "client/tsconfig.json",
+      "source": "node-7-1772384008894-frontend-remediation-developer.md",
+      "classification": "client",
+      "size": 471
+    },
+    {
+      "path": "client/vite.config.ts",
+      "source": "node-7-1772384008894-frontend-remediation-developer.md",
+      "classification": "client",
+      "size": 269
+    },
+    {
+      "path": "client/src/main.tsx",
+      "source": "node-7-1772384008894-frontend-remediation-developer.md",
+      "classification": "client",
+      "size": 428
+    },
+    {
+      "path": "client/src/index.css",
+      "source": "node-7-1772384008894-frontend-remediation-developer.md",
+      "classification": "client",
+      "size": 2019
+    },
+    {
+      "path": "client/src/App.tsx",
+      "source": "node-7-1772384008894-frontend-remediation-developer.md",
+      "classification": "client",
+      "size": 1364
+    },
+    {
+      "path": "client/src/services/api.ts",
+      "source": "node-7-1772384008894-frontend-remediation-developer.md",
+      "classification": "client",
+      "size": 438
+    },
+    {
+      "path": "client/src/types/index.ts",
+      "source": "node-7-1772384008894-frontend-remediation-developer.md",
+      "classification": "client",
+      "size": 584
+    },
+    {
+      "path": "client/src/contexts/AuthContext.tsx",
+      "source": "node-7-1772384008894-frontend-remediation-developer.md",
+      "classification": "client",
+      "size": 1966
+    },
+    {
+      "path": "client/src/hooks/useAuth.ts",
+      "source": "node-7-1772384008894-frontend-remediation-developer.md",
+      "classification": "client",
+      "size": 275
+    },
+    {
+      "path": "client/src/components/PrivateRoute.tsx",
+      "source": "node-7-1772384008894-frontend-remediation-developer.md",
+      "classification": "client",
+      "size": 485
+    },
+    {
+      "path": "client/src/components/Layout.tsx",
+      "source": "node-7-1772384008894-frontend-remediation-developer.md",
+      "classification": "client",
+      "size": 321
+    },
+    {
+      "path": "client/src/components/Navbar.tsx",
+      "source": "node-7-1772384008894-frontend-remediation-developer.md",
+      "classification": "client",
+      "size": 1351
+    },
+    {
+      "path": "client/src/components/Navbar.css",
+      "source": "node-7-1772384008894-frontend-remediation-developer.md",
+      "classification": "client",
+      "size": 916
+    },
+    {
+      "path": "client/src/pages/LoginPage.tsx",
+      "source": "node-7-1772384008894-frontend-remediation-developer.md",
+      "classification": "client",
+      "size": 1631
+    },
+    {
+      "path": "client/src/pages/RegisterPage.tsx",
+      "source": "node-7-1772384008894-frontend-remediation-developer.md",
+      "classification": "client",
+      "size": 1782
+    },
+    {
+      "path": "client/src/pages/DashboardPage.tsx",
+      "source": "node-7-1772384008894-frontend-remediation-developer.md",
+      "classification": "client",
+      "size": 1198
+    },
+    {
+      "path": "client/src/pages/DashboardPage.css",
+      "source": "node-7-1772384008894-frontend-remediation-developer.md",
+      "classification": "client",
+      "size": 1124
+    },
+    {
+      "path": "client/src/pages/ProfilePage.tsx",
+      "source": "node-7-1772384008894-frontend-remediation-developer.md",
+      "classification": "client",
+      "size": 1971
+    },
+    {
+      "path": "client/src/pages/ShowerPage.tsx",
+      "source": "node-7-1772384008894-frontend-remediation-developer.md",
+      "classification": "client",
+      "size": 2972
+    },
+    {
+      "path": "client/src/pages/ShowerPage.css",
+      "source": "node-7-1772384008894-frontend-remediation-developer.md",
+      "classification": "client",
+      "size": 690
+    },
+    {
+      "path": "client/src/pages/GamePage.tsx",
+      "source": "node-7-1772384008894-frontend-remediation-developer.md",
+      "classification": "client",
+      "size": 1905
+    },
+    {
+      "path": "client/src/pages/LeaderboardPage.tsx",
+      "source": "node-7-1772384008894-frontend-remediation-developer.md",
+      "classification": "client",
+      "size": 1628
+    },
+    {
+      "path": "client/src/pages/LeaderboardPage.css",
+      "source": "node-7-1772384008894-frontend-remediation-developer.md",
+      "classification": "client",
+      "size": 820
+    },
+    {
+      "path": "client/src/pages/SettingsPage.tsx",
+      "source": "node-7-1772384008894-frontend-remediation-developer.md",
+      "classification": "client",
+      "size": 2407
+    },
+    {
+      "path": "server/src/services/auth.service.ts",
+      "source": "node-7-1772384008894-frontend-remediation-developer.md",
+      "classification": "server",
+      "size": 350
+    },
+    {
+      "path": "server/src/services/profile.service.ts",
+      "source": "node-7-1772384008894-frontend-remediation-developer.md",
+      "classification": "server",
+      "size": 379
+    },
+    {
+      "path": "server/src/services/shower.service.ts",
+      "source": "node-7-1772384008894-frontend-remediation-developer.md",
+      "classification": "server",
+      "size": 406
+    },
+    {
+      "path": "server/src/services/game.service.ts",
+      "source": "node-7-1772384008894-frontend-remediation-developer.md",
+      "classification": "server",
+      "size": 203
+    },
+    {
+      "path": "server/src/services/points.service.ts",
+      "source": "node-7-1772384008894-frontend-remediation-developer.md",
+      "classification": "server",
+      "size": 219
+    },
+    {
+      "path": "server/src/services/reminder.service.ts",
+      "source": "node-7-1772384008894-frontend-remediation-developer.md",
+      "classification": "server",
+      "size": 387
+    },
+    {
+      "path": "client/package.json",
+      "source": "node-8-1772384008894-backend-remediation-developer.md",
+      "classification": "client",
+      "size": 712
+    },
+    {
+      "path": "client/tsconfig.json",
+      "source": "node-8-1772384008894-backend-remediation-developer.md",
+      "classification": "client",
+      "size": 470
+    },
+    {
+      "path": "server/src/server.ts",
+      "source": "node-8-1772384008894-backend-remediation-developer.md",
+      "classification": "server",
+      "size": 1348
+    },
+    {
+      "path": "server/src/config/database.ts",
+      "source": "node-8-1772384008894-backend-remediation-developer.md",
+      "classification": "server",
+      "size": 303
+    },
+    {
+      "path": "server/src/config/jwt.ts",
+      "source": "node-8-1772384008894-backend-remediation-developer.md",
+      "classification": "server",
+      "size": 181
+    },
+    {
+      "path": "server/src/middleware/auth.ts",
+      "source": "node-8-1772384008894-backend-remediation-developer.md",
+      "classification": "server",
+      "size": 724
+    },
+    {
+      "path": "server/src/middleware/errorHandler.ts",
+      "source": "node-8-1772384008894-backend-remediation-developer.md",
+      "classification": "server",
+      "size": 519
+    },
+    {
+      "path": "server/src/services/auth.service.ts",
+      "source": "node-8-1772384008894-backend-remediation-developer.md",
+      "classification": "server",
+      "size": 754
+    },
+    {
+      "path": "server/src/models/user.model.ts",
+      "source": "node-8-1772384008894-backend-remediation-developer.md",
+      "classification": "server",
+      "size": 802
+    },
+    {
+      "path": "server/src/models/profile.model.ts",
+      "source": "node-8-1772384008894-backend-remediation-developer.md",
+      "classification": "server",
+      "size": 1753
+    },
+    {
+      "path": "server/src/models/shower.model.ts",
+      "source": "node-8-1772384008894-backend-remediation-developer.md",
+      "classification": "server",
+      "size": 924
+    },
+    {
+      "path": "server/src/models/game.model.ts",
+      "source": "node-8-1772384008894-backend-remediation-developer.md",
+      "classification": "server",
+      "size": 758
+    },
+    {
+      "path": "server/src/models/reminder.model.ts",
+      "source": "node-8-1772384008894-backend-remediation-developer.md",
+      "classification": "server",
+      "size": 880
+    },
+    {
+      "path": "server/src/controllers/auth.controller.ts",
+      "source": "node-8-1772384008894-backend-remediation-developer.md",
+      "classification": "server",
+      "size": 1822
+    },
+    {
+      "path": "server/src/controllers/profile.controller.ts",
+      "source": "node-8-1772384008894-backend-remediation-developer.md",
+      "classification": "server",
+      "size": 1335
+    },
+    {
+      "path": "server/src/controllers/shower.controller.ts",
+      "source": "node-8-1772384008894-backend-remediation-developer.md",
+      "classification": "server",
+      "size": 1677
+    },
+    {
+      "path": "server/src/controllers/game.controller.ts",
+      "source": "node-8-1772384008894-backend-remediation-developer.md",
+      "classification": "server",
+      "size": 1078
+    },
+    {
+      "path": "server/src/controllers/leaderboard.controller.ts",
+      "source": "node-8-1772384008894-backend-remediation-developer.md",
+      "classification": "server",
+      "size": 505
+    },
+    {
+      "path": "server/src/controllers/reminder.controller.ts",
+      "source": "node-8-1772384008894-backend-remediation-developer.md",
+      "classification": "server",
+      "size": 1285
+    },
+    {
+      "path": "server/src/routes/auth.routes.ts",
+      "source": "node-8-1772384008894-backend-remediation-developer.md",
+      "classification": "server",
+      "size": 216
+    },
+    {
+      "path": "server/src/routes/profile.routes.ts",
+      "source": "node-8-1772384008894-backend-remediation-developer.md",
+      "classification": "server",
+      "size": 309
+    },
+    {
+      "path": "server/src/routes/shower.routes.ts",
+      "source": "node-8-1772384008894-backend-remediation-developer.md",
+      "classification": "server",
+      "size": 317
+    },
+    {
+      "path": "server/src/routes/game.routes.ts",
+      "source": "node-8-1772384008894-backend-remediation-developer.md",
+      "classification": "server",
+      "size": 259
+    },
+    {
+      "path": "server/src/routes/leaderboard.routes.ts",
+      "source": "node-8-1772384008894-backend-remediation-developer.md",
+      "classification": "server",
+      "size": 266
+    },
+    {
+      "path": "server/src/routes/reminder.routes.ts",
+      "source": "node-8-1772384008894-backend-remediation-developer.md",
+      "classification": "server",
+      "size": 301
+    },
+    {
+      "path": "server/migrations/001_initial_schema.sql",
+      "source": "node-8-1772384008894-backend-remediation-developer.md",
+      "classification": "server",
+      "size": 2320
+    },
+    {
+      "path": "server/.env.example",
+      "source": "node-8-1772384008894-backend-remediation-developer.md",
+      "classification": "server",
+      "size": 173
+    },
+    {
+      "path": "setup.sh",
+      "source": "node-9-1772384008894-devops-engineer.md",
+      "classification": "root",
+      "size": 2577
+    },
+    {
+      "path": "start.sh",
+      "source": "node-9-1772384008894-devops-engineer.md",
+      "classification": "root",
+      "size": 735
+    },
+    {
+      "path": "README.md",
+      "source": "node-9-1772384008894-devops-engineer.md",
+      "classification": "root",
+      "size": 274
+    },
+    {
+      "path": "docker-compose.yml",
+      "source": "node-9-1772384008894-devops-engineer.md",
+      "classification": "root",
+      "size": 1524
+    },
+    {
+      "path": ".gitignore",
+      "source": "node-9-1772384008894-devops-engineer.md",
+      "classification": "root",
+      "size": 275
+    },
+    {
+      "path": "server/.env.example",
+      "source": "node-9-1772384008894-devops-engineer.md",
+      "classification": "server",
+      "size": 176
+    },
+    {
+      "path": "client/.env.example",
+      "source": "node-9-1772384008894-devops-engineer.md",
+      "classification": "client",
+      "size": 157
+    },
+    {
+      "path": "server/Dockerfile",
+      "source": "node-9-1772384008894-devops-engineer.md",
+      "classification": "server",
+      "size": 492
+    },
+    {
+      "path": "client/Dockerfile",
+      "source": "node-9-1772384008894-devops-engineer.md",
+      "classification": "client",
+      "size": 492
+    }
+  ]
+}

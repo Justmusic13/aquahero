@@ -1,0 +1,60 @@
+.navbar {
+  background-color: var(--surface-color);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 0 2rem;
+  height: 64px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-logo {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin: 0 1rem;
+}
+
+.nav-link {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
+.nav-user-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-logout-btn {
+  padding: 0.4em 0.8em;
+  font-size: 0.9em;
+  background-color: var(--danger-color);
+}
+
+.nav-logout-btn:hover {
+  background-color: var(--danger-hover);
+}

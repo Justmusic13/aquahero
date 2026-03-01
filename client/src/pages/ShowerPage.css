@@ -1,0 +1,49 @@
+.shower-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .shower-container {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.timer-card {
+  text-align: center;
+}
+
+.timer-display {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 1rem 0 2rem;
+  color: var(--primary-color);
+}
+
+.timer-controls button {
+  width: 100%;
+  padding: 1em;
+  font-size: 1.2rem;
+}
+
+.logs-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.logs-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.logs-list li:last-child {
+  border-bottom: none;
+}
+
+.logs-list span {
+  flex: 1;
+}

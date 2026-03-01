@@ -1,0 +1,44 @@
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.leaderboard-table thead th {
+  background-color: var(--background-color);
+  color: var(--text-muted);
+  font-weight: 600;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.leaderboard-table tbody tr {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.leaderboard-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.leaderboard-table tbody tr:nth-of-type(even) {
+  background-color: var(--background-color);
+}
+
+.player-cell {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 4px;
+  font-size: 0.8em;
+  margin-right: 10px;
+}

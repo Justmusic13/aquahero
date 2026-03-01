@@ -1,0 +1,59 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:15-alpine
+    container_name: aquahero_db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: aquahero
+    volumes:
+      # Mount the initial schema to be run on first start
+      - ./server/migrations/001_initial_schema.sql:/docker-entrypoint-initdb.d/init.sql
+      # Persist database data
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d aquahero"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    container_name: aquahero_server
+    environment:
+      PORT: 8000
+      DATABASE_URL: postgresql://postgres:postgres@db:5432/aquahero
+      JWT_SECRET: docker-super-secret-key
+      CLIENT_URL: http://localhost:5173
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - ./server/src:/app/src # Mount src for live-reloading
+
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    container_name: aquahero_client
+    environment:
+      # This works for both Vite and Next.js inside Docker
+      VITE_API_URL: http://localhost:8000/api
+      NEXT_PUBLIC_API_URL: http://localhost:8000/api
+    ports:
+      - "5173:5173"
+    depends_on:
+      - server
+    volumes:
+      - ./client/src:/app/src # Mount src for live-reloading
+
+volumes:
+  postgres_data:
