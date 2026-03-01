@@ -10,6 +10,7 @@ import showerRoutes from './routes/shower.routes';
 import gameRoutes from './routes/game.routes';
 import leaderboardRoutes from './routes/leaderboard.routes';
 import reminderRoutes from './routes/reminder.routes';
+import pointsRoutes from './routes/points.routes';
 
 dotenv.config();
 
@@ -33,6 +34,7 @@ app.use('/api/showers', showerRoutes);
 app.use('/api/games', gameRoutes);
 app.use('/api/leaderboard', leaderboardRoutes);
 app.use('/api/reminders', reminderRoutes);
+app.use('/api/points', pointsRoutes);
 
 // Health check
 app.get('/health', (req, res) => {
