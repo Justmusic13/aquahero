@@ -48,7 +48,7 @@ const Navbar: React.FC = () => {
           fontSize: '1.3rem',
           color: 'var(--primary-color)',
         }}>
-<img src="https://www.averyi.pro/client/public/aquahero-logo.svg" alt="AquaHero" style={{ height: '40px' }} /> AquaHero
+<img src="/ah.png" alt="AquaHero" style={{ height: '40px' }} /> AquaHero
         </Link>
 
         {/* Nav items */}
