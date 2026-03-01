@@ -48,7 +48,7 @@ const Navbar: React.FC = () => {
           fontSize: '1.3rem',
           color: 'var(--primary-color)',
         }}>
-          💧 AquaHero
+<img src="/ah.svg" alt="AquaHero" style={{ height: '40px' }} /> AquaHero
         </Link>
 
         {/* Nav items */}
